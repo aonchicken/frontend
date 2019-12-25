@@ -28,17 +28,6 @@ class App extends Component {
           .then(data => {
               this.setState({username: data.username})
           })
-
-      // fetch('http://localhost:8000/core/current_user/', {
-      //   headers: {
-      //     Authorization: `JWT ${localStorage.getItem('token')}`
-      //   }
-      // })
-      //     .then(res => res.json())
-      //     .then(json => {
-      //       this.setState({ username: json.username });
-      //     });
-
     }
   }
 
