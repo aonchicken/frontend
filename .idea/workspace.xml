@@ -2,17 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0ceaa379-65bb-4055-b368-eae6349b1720" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/LoginForm.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Nav.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/SignupForm.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,26 +74,42 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1577254602034</updated>
-      <workItem from="1577254603600" duration="10338000" />
+      <workItem from="1577254603600" duration="11131000" />
     </task>
+    <task id="LOCAL-00001" summary="react1">
+      <created>1577265855543</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1577265855543</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="react1" />
+    <option name="LAST_COMMIT_MESSAGE" value="react1" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1620" y="84" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1577262556290">
       <screen x="1366" y="0" width="1600" height="860" />
     </state>
     <state x="1620" y="84" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728/1366.0.1600.860@1366.0.1600.860" timestamp="1577262556290" />
-    <state x="1791" y="23" key="CommitChangelistDialog2" timestamp="1577265834402">
+    <state x="1791" y="23" key="CommitChangelistDialog2" timestamp="1577265852566">
       <screen x="1366" y="0" width="1600" height="860" />
     </state>
-    <state x="1791" y="23" key="CommitChangelistDialog2/0.0.1366.728/1366.0.1600.860@1366.0.1600.860" timestamp="1577265834402" />
+    <state x="1791" y="23" key="CommitChangelistDialog2/0.0.1366.728/1366.0.1600.860@1366.0.1600.860" timestamp="1577265852566" />
     <state x="1946" y="184" key="FileChooserDialogImpl" timestamp="1577260438803">
       <screen x="1366" y="0" width="1600" height="860" />
     </state>
     <state x="1946" y="184" key="FileChooserDialogImpl/0.0.1366.728/1366.0.1600.860@1366.0.1600.860" timestamp="1577260438803" />
+    <state x="2047" y="322" width="260" height="215" key="Github.ShareDialog" timestamp="1577266567073">
+      <screen x="1366" y="0" width="1600" height="860" />
+    </state>
+    <state x="2047" y="322" width="260" height="215" key="Github.ShareDialog/0.0.1366.728/1366.0.1600.860@1366.0.1600.860" timestamp="1577266567073" />
     <state width="1579" height="222" key="GridCell.Tab.0.bottom" timestamp="1577265834820">
       <screen x="1366" y="0" width="1600" height="860" />
     </state>
