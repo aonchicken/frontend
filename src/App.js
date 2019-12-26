@@ -50,14 +50,35 @@ class App extends Component {
     e.preventDefault();
       axios.post('http://localhost:8000/core/users/',data)
           .then(res => res.data )
+
           .then(data => {
               localStorage.setItem('token', data.token);
               this.setState({
                   logged_in: true,
                   displayed_form: '',
                   username: data.username
-              });
-          });
+              })
+          })
+          .catch((error) => {
+              if(e.response){
+                  console.log(error.response.data);
+                  console.log(error.response.status);
+                  console.log(error.response.headers);
+              }else if (error.request) {
+                  /*
+                   * The request was made but no response was received, `error.request`
+                   * is an instance of XMLHttpRequest in the browser and an instance
+                   * of http.ClientRequest in Node.js
+                   */
+                  console.log(error.request);
+              } else {
+                  // Something happened in setting up the request and triggered an Error
+                  console.log('Error', error.message);
+              }
+              console.log(error.config);
+          })
+
+
   };
 
   handle_logout = () => {
@@ -85,14 +106,14 @@ class App extends Component {
     }
 
     return (
-        <div className="container App">
+        <div className="container-fluid App">
           <Nav
               logged_in={this.state.logged_in}
               display_form={this.display_form}
               handle_logout={this.handle_logout}
           />
           {form}
-          <h3>
+          <h3 className="text-center text-justify">
             {this.state.logged_in
                 ? `Hello, ${this.state.username}`
                 : 'Please Log In'}
