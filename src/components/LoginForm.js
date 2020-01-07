@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
 
 class LoginForm extends React.Component {
@@ -34,6 +33,8 @@ class LoginForm extends React.Component {
                                            value={this.state.username}
                                            onChange={this.handle_change}
                                     />
+
+
                                     <label>Password</label>
                                     <input className="form-control" placeholder="Password"
                                            type="password"

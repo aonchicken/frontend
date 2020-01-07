@@ -9,9 +9,6 @@ function Nav(props) {
                 <li className="nav-item">
                     <a className="nav-link font-weight-bold" onClick={() => props.display_form('login')} >Log In</a>
                 </li>
-                <li className="nav-item">
-                    <a className="nav-link font-weight-bold" onClick={() => props.display_form('signup')}>Sign Up</a>
-                </li>
             </ul>
         </nav>
 
@@ -21,6 +18,9 @@ function Nav(props) {
         <nav className="navbar navbar-expand-sm navbar-dark bg-dark justify-content-center">
             <a className="navbar-brand font-weight-bold" >Application <span className="badge badge-secondary">New</span></a>
             <ul className="navbar-nav">
+                <li className="nav-item">
+                    <a className="nav-link font-weight-bold" onClick={() => props.display_form('signup')}>Sign Up</a>
+                </li>
                 <li className="nav-item">
                     <a className="nav-link font-weight-bold" onClick={props.handle_logout} >Log Out</a>
                 </li>

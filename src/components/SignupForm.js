@@ -1,23 +1,42 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import GroupDropdown from "./GroupDropdown";
+
+
+
 
 class SignupForm extends React.Component {
-    state = {
-        username: '',
-        password: ''
-    };
+
+    constructor(props) {
+        super(props);
+        this.state = {
+            username: '',
+            first_name: '',
+            last_name: '',
+            groups: [],
+            password: '',
+            options: []
+        }
+    }
 
     handle_change = e => {
         const name = e.target.name;
         const value = e.target.value;
         this.setState(prevstate => {
             const newState = { ...prevstate };
+            console.log(value);
+            console.log(name);
             newState[name] = value;
             return newState;
         });
     };
 
+
+    componentDidMount() {
+
+    }
     render() {
+
         return (
             <div className="container">
                 <div className="row">
@@ -33,6 +52,35 @@ class SignupForm extends React.Component {
                                         value={this.state.username}
                                         onChange={this.handle_change}
                                     />
+                                    <label>First Name</label>
+                                    <input className="form-control " placeholder="First Name"
+                                           type="text"
+                                           name="first_name"
+                                           value={this.state.first_name}
+                                           onChange={this.handle_change}
+                                    />
+                                    <label>Last Name</label>
+                                    <input className="form-control " placeholder="Last Name"
+                                           type="text"
+                                           name="last_name"
+                                           value={this.state.last_name}
+                                           onChange={this.handle_change}
+                                    />
+                                    <br/>
+                                    <label>
+                                        Group
+                                        <GroupDropdown/>
+                                    </label>
+                                    <br/>
+                                    <h1>Current Username: {this.state.username}</h1>
+                                    <div>
+                                        <ul>
+                                            {this.state.groups.map(item => (
+                                                <li key={item}>{item}</li>
+                                            ))}
+                                        </ul>
+                                    </div>
+
                                     <label htmlFor="password">Password</label>
                                     <input className="form-control" placeholder="Password"
                                         type="password"
