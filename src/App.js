@@ -21,7 +21,7 @@ class App extends Component {
 
   componentDidMount() {
     if (this.state.logged_in) {
-      axios.get('http://localhost:8000/accounts/users/me/',
+      axios.get('http://localhost:8000/auth/users/me/',
           { headers: {
                         "Authorization" : `Bearer ${localStorage.getItem('access')}`
                     }
@@ -117,13 +117,13 @@ class App extends Component {
     }
     let table;
     if(this.state.logged_in){
-        table = <div><h3 className="text-center text-justify">Hello, {this.state.username}</h3><FixtureMonitor/></div>
+        table = <FixtureMonitor/>
     }else {
         table = <div><h3 className="text-center text-justify">Please Log In</h3></div>
     }
 
     return (
-        <div className="container-fluid App">
+        <div >
           <Nav
               logged_in={this.state.logged_in}
               display_form={this.display_form}

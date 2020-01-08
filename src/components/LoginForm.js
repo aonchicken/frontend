@@ -10,11 +10,19 @@ class LoginForm extends React.Component {
     handle_change = e => {
         const name = e.target.name;
         const value = e.target.value;
+        // this.setState({
+        //     username: value
+        // });
+        // console.log(this.state.username)
         this.setState(prevstate => {
+            // const newState = {"username":prevstate.username,"password": prevstate.password}
             const newState = { ...prevstate };
+            // console.log(newState);
             newState[name] = value;
+            // console.log(newState);
             return newState;
         });
+
     };
 
     render() {
